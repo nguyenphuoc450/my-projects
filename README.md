@@ -1,8 +1,1 @@
-### Repo dành cho thực tập tại EPAL Solution
-```
-git clone
-git checkout -b u/user/id_issue
-git add -A
-git commit -m "first commit"
-git push
-``` 
+### Repo này là những project nhỏ đã được làm trong thời gian học tập và tìm hiểu về frontend.
