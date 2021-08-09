@@ -1,0 +1,444 @@
+@import "style";
+.currency-unit {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $ink-basic;
+}
+.option {
+  border-radius: 10px;
+}
+// icon nex , pre date picker
+.ui-datepicker-prev.ui-corner-all {
+  background-image: url(../../image/Moc-Flowers/Thanh-Toan/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ui-datepicker-next.ui-corner-all {
+  background-image: url(../../image/Moc-Flowers/Thanh-Toan/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+//------------------------------------------Form-----------------------------------------
+.info {
+  padding: 40px 0 60px;
+  &__form {
+    border: 1px solid #d3d7de;
+    &:not(:first-child) {
+      margin-top: 32px;
+    }
+    &-title {
+      padding: 16px 0 16px 40px;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 700;
+      color: $ink-basic;
+      background-color: $bg-color-lighter;
+      border-bottom: 1px solid #d3d7de;
+    }
+    &-wrapper {
+      padding: 0 24px 32px;
+    }
+    &-caption {
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $ink-ligh;
+    }
+    &-two-input-caption {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $ink-ligh;
+    }
+    &-input,
+    &-select,
+    &-text-area {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $ink-ligh;
+    }
+    &-check-box,
+    &-radio {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      span {
+        color: $ink-basic;
+        width: 100%;
+      }
+    }
+    &-radio {
+      input {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      &:first-child {
+        margin-top: 24px;
+      }
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+    &-check-box {
+      margin-top: 24px;
+      input {
+        width: 18px;
+        height: 18px;
+        margin-right: 9px;
+      }
+    }
+    &-text-area {
+      margin-top: 4px;
+      padding: 9px 12px;
+      width: 100%;
+      height: 120px;
+      border: 1px solid #d3d7de;
+    }
+    &-input,
+    &-select {
+      margin-top: 4px;
+      padding: 8px 12px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #d3d7de;
+      border-radius: 20px;
+      outline: none;
+    }
+    &-select {
+      appearance: none;
+      background-image: url(../../image/Moc-Flowers/Thanh-Toan/arrow-drop-down.svg);
+      background-position: 95% 50%;
+      background-repeat: no-repeat;
+    }
+    &-select--small {
+      width: calc(50% - 16px);
+    }
+    &-two-input {
+      margin-top: 24px;
+      display: flex;
+      &-left {
+        width: 50%;
+      }
+      &-right {
+        margin-left: 32px;
+        width: 50%;
+      }
+    }
+    &-two-check-box {
+      display: flex;
+      .info__form-check-box {
+        width: 50%;
+        margin: 0;
+      }
+      .info__form-check-box:not(:first-child) {
+        margin-left: 32px;
+      }
+    }
+    &-two-input-time {
+      display: flex;
+      align-items: center;
+    }
+    .wrapper-date-picker {
+      width: 50%;
+    }
+    .date-picker-input-group {
+      margin-top: 4px;
+      padding: 8px 12px;
+      border: 1px solid #d3d7de;
+      border-radius: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $ink-ligh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+    }
+    .wrapper-clock-picker {
+      margin-left: 32px;
+      width: 50%;
+    }
+    .clock-picker-group {
+      display: flex;
+      align-items: center;
+    }
+    .clock-picker-input-group {
+      margin-top: 4px;
+      padding: 8px 12px;
+      width: 50%;
+      border: 1px solid #d3d7de;
+      border-radius: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $ink-ligh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .clock-picker {
+      width: 100%;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    .clock-picker-border {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      margin: 0 5px;
+      color: #637381;
+    }
+    &-border-line {
+      display: block;
+      margin: 24px 0;
+      width: 100%;
+      height: 0.5px;
+      background-color: #d3d7de;
+    }
+  }
+  &__order {
+    padding: 32px 24px;
+    background-color: $bg-color-lighter;
+    border-radius: 4px;
+    &-title {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 700;
+      color: $ink-basic;
+      margin-bottom: 24px;
+    }
+    &-product {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      &-name {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $ink-basic;
+      }
+      &-detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+      }
+      &-quantity {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $ink-basic;
+      }
+      &-price {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color: $ink-basic;
+      }
+    }
+    &-group {
+      margin-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-caption {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: $ink-basic;
+    }
+    &-ship-price,
+    &-sale-price,
+    &-total-price,
+    &-price {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $ink-basic;
+    }
+    &-price--highlight {
+      color: #339bb2;
+    }
+    &-caption--upper-case {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &-price--upper-case {
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &-border-line {
+      display: block;
+      margin: 24px 0;
+      width: 100%;
+      height: 0.5px;
+      background-color: #d3d7de;
+    }
+    &-btn {
+      margin-top: 50px;
+      display: flex;
+      background-color: $primary-teal;
+      &:hover {
+        background-color: $ink-teal;
+        color: #ffffff;
+      }
+    }
+  }
+}
+$res_375: "only screen and (min-width: 375px) and (max-width: 424px)";
+$res_425: "only screen and (min-width: 425px) and (max-width: 575px)";
+$res_576: "only screen and (min-width: 576px) and (max-width: 767px)";
+$res_768: "only screen and (min-width: 768px) and (max-width: 991px)";
+$res_992: "only screen and (min-width: 992px) and (max-width: 1023px)";
+$res_1024: "only screen and (min-width: 1024px) and (max-width: 1199px)";
+@mixin responsive_375() {
+  @media #{$res_375} {
+    @content;
+  }
+}
+@mixin responsive_425() {
+  @media #{$res_425} {
+    @content;
+  }
+}
+@mixin responsive_576() {
+  @media #{$res_576} {
+    @content;
+  }
+}
+@mixin responsive_768() {
+  @media #{$res_768} {
+    @content;
+  }
+}
+@mixin responsive_992() {
+  @media #{$res_992} {
+    @content;
+  }
+}
+@mixin responsive_1024() {
+  @media #{$res_1024} {
+    @content;
+  }
+}
+// màn hình 375px đến 424px
+@include responsive_375 {
+  .info__form:not(:first-child) {
+    margin-top: 20px;
+  }
+  .info__order {
+    margin-top: 20px;
+  }
+  .info__form-select--small {
+    width: 100%;
+  }
+  .info__form-two-input {
+    flex-direction: column;
+    .info__form-two-input-left {
+      width: 100%;
+    }
+    .info__form-two-input-right {
+      width: 100%;
+      margin-top: 24px;
+      margin-left: 0;
+    }
+  }
+  .info__form-two-input-time {
+    flex-direction: column;
+    .wrapper-date-picker {
+      width: 100%;
+    }
+    .wrapper-clock-picker {
+      margin-top: 5px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .info__form-two-check-box .info__form-check-box:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+// màn hình 425px đến 575px
+@include responsive_425 {
+  .info__form:not(:first-child) {
+    margin-top: 20px;
+  }
+  .info__order {
+    margin-top: 20px;
+  }
+  .info__form-select--small {
+    width: 100%;
+  }
+  .info__form-two-input {
+    flex-direction: column;
+    .info__form-two-input-left {
+      width: 100%;
+    }
+    .info__form-two-input-right {
+      width: 100%;
+      margin-top: 24px;
+      margin-left: 0;
+    }
+  }
+  .info__form-two-input-time {
+    flex-direction: column;
+    .wrapper-date-picker {
+      width: 100%;
+    }
+    .wrapper-clock-picker {
+      margin-top: 5px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .info__form-two-check-box .info__form-check-box:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+// màn hình 576px đến 767px
+@include responsive_576 {
+  .info__form:not(:first-child) {
+    margin-top: 20px;
+  }
+  .info__order {
+    margin-top: 20px;
+  }
+}
+// màn hình 768px đến 991px
+@include responsive_768 {
+  .info__form:not(:first-child) {
+    margin-top: 20px;
+  }
+  .info__order {
+    margin-top: 20px;
+  }
+}
+// màn hình 992px đến 1023px
+@include responsive_992 {
+  .info__order {
+    margin-top: 32px;
+  }
+}
+// màn hình 1024px đến 1199px
+@include responsive_1024 {
+  .info__order {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,400 @@
+@import "style";
+.currency-unit {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+//------------------------------------------Cart------------------------------------------
+.cart {
+    padding: 40px 0 60px;
+    &__total-products {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 20px;
+        color: $ink-teal;
+        font-weight: 400;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__product-item {
+        display: flex;
+        &-image {
+            width: 168px;
+            height: 179px;
+            object-fit: cover;
+            object-position: center;
+        }
+        &-detail {
+            margin: 0 60px 0 32px;
+        }
+        &-name {
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 700;
+            color: $ink-basic;
+        }
+        &-wrapper-price {
+            color: $ink-teal;
+        }
+        &-price {
+            display: inline-block;
+            margin: 16px 0 42px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+    }
+    &__product-option {
+        display: flex;
+        align-items: center;
+        &-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            span {
+                margin-left: 8px;
+            }
+            &:hover {
+                color: $ink-teal;
+            }
+        }
+        &-border {
+            display: block;
+            width: 1px;
+            height: 23px;
+            background: #d3d7de;
+            margin: 0 8px;
+        }
+    }
+    &__product-current-quantity {
+        &-item {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #d3d7de;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: $ink-basic;
+            cursor: pointer;
+            user-select: none;
+        }
+        &-item--disable {
+            color: #d3d7de;
+            cursor: default;
+        }
+    }
+    &__product-border-line {
+        display: block;
+        margin: 24px 0;
+        width: 80%;
+        height: 1px;
+        background-color: #d3d7de;
+    }
+    //------------------------------------------Order------------------------------------------
+    &__order {
+        padding: 32px 24px;
+        background-color: $bg-color-lighter;
+        &-caption {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 700;
+            color: $ink-basic;
+        }
+        &-wrapper-price {
+            color: $ink-basic;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20px;
+            color: $ink-basic;
+            font-weight: 700;
+        }
+        &-price {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+        &-form {
+            margin: 16px 0 24px;
+            display: flex;
+            align-items: center;
+            &-input {
+                width: 75%;
+                padding: 8px 12px;
+                border: 1px solid #d3d7de;
+                border-radius: 20px;
+                outline: none;
+            }
+            &-btn {
+                width: 25%;
+                margin-left: 28px;
+                padding: 9px 12px;
+                background-color: $primary-teal;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 700;
+                color: #ffffff;
+                &:hover {
+                    background-color: $ink-teal;
+                    color: #ffffff;
+                }
+            }
+        }
+        &-detail,
+        &-sale,
+        &-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-detail {
+            margin: 27px 0 22px;
+        }
+        &-sale {
+            margin-bottom: 27px;
+        }
+        &-total {
+            margin: 32px 0 48px;
+            &-text {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 700;
+                color: $ink-basic;
+            }
+            &-wrapper-price {
+                color: $ink-teal;
+            }
+            &-price {
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 700;
+            }
+        }
+        &-btn {
+            width: 100%;
+            background-color: $primary-teal;
+            border-radius: 5px;
+            &:hover {
+                background-color: $ink-teal;
+                color: #ffffff;
+            }
+        }
+        &-border-line {
+            display: block;
+            background: #d3d7de;
+            width: 100%;
+            height: 0.5px;
+        }
+    }
+}
+//------------------------------------------Recommend product------------------------------------------
+.recommend-product {
+    padding: 40px 0;
+    background-color: $bg-color-lighter;
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__carousel {
+        position: relative;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        &-detail {
+            margin-left: 16px;
+            &-name {
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 700;
+                color: $ink-basic;
+            }
+            &-price {
+                margin: 12px 0 16px;
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 700;
+                color: $ink-teal;
+            }
+            &-btn {
+                background-color: $primary-teal;
+                span {
+                    margin-right: 16px;
+                }
+                &:hover {
+                    color: #ffffff;
+                    background-color: $secondary-basic;
+                }
+                img {
+                    width: 7px !important;
+                    height: 12px !important;
+                }
+            }
+        }
+    }
+}
+//------------------------------------------Responsive------------------------------------------
+$res_375: "only screen and (min-width: 375px) and (max-width: 424px)";
+$res_425: "only screen and (min-width: 425px) and (max-width: 575px)";
+$res_576: "only screen and (min-width: 576px) and (max-width: 767px)";
+$res_768: "only screen and (min-width: 768px) and (max-width: 991px)";
+$res_992: "only screen and (min-width: 992px) and (max-width: 1023px)";
+$res_1024: "only screen and (min-width: 1024px) and (max-width: 1199px)";
+$res_1200: "only screen and (min-width: 1200px) and (max-width: 1400px)";
+@mixin responsive_375() {
+    @media #{$res_375} {
+        @content;
+    }
+}
+@mixin responsive_425() {
+    @media #{$res_425} {
+        @content;
+    }
+}
+@mixin responsive_576() {
+    @media #{$res_576} {
+        @content;
+    }
+}
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+@mixin responsive_992() {
+    @media #{$res_992} {
+        @content;
+    }
+}
+@mixin responsive_1024() {
+    @media #{$res_1024} {
+        @content;
+    }
+}
+@mixin responsive_1200() {
+    @media #{$res_1200} {
+        @content;
+    }
+}
+
+// màn hình 375px đến 424px
+@include responsive_375 {
+    .cart__product-item-image {
+        width: 130px;
+        height: 179px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .cart__product-item-detail {
+        margin: 0 5px;
+        text-align: center;
+    }
+    .cart__product-item-price {
+        margin: 16px 0;
+    }
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+    .cart__product-border-line {
+        width: 100%;
+    }
+}
+// màn hình 425px đến 575px
+@include responsive_425 {
+    .cart__product-item-detail {
+        margin: 0 5px;
+        text-align: center;
+    }
+    .cart__product-item-price {
+        margin: 16px 0;
+    }
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+    .cart__product-border-line {
+        width: 100%;
+    }
+}
+
+// màn hình 576px đến 767px
+@include responsive_576 {
+    .cart__product-item-detail {
+        margin: 0 15px;
+    }
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+    .cart__product-border-line {
+        width: 100%;
+    }
+}
+
+// màn hình 768px đến 991px
+@include responsive_768 {
+    .cart__product-item-detail {
+        margin: 0 15px;
+    }
+    .cart__product-border-line {
+        width: 100%;
+    }
+}
+
+// màn hình 992px đến 1023px
+@include responsive_992 {
+    .cart__product-item-detail {
+        margin: 0 15px;
+    }
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+// màn hình 1024px đến 1199px
+@include responsive_1024 {
+    .cart__product-item-detail {
+        margin: 0 15px;
+    }
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+// màn hình 1200px đến 1400px
+@include responsive_1200 {
+    .cart__product-current-quantity {
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__product-current-quantity-item:not(:first-child) {
+        margin-top: 10px;
+    }
+}
